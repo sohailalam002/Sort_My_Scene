@@ -26,6 +26,12 @@ const seedDatabase = async () => {
         dateTime: new Date("2025-09-15T10:00:00"),
         totalSeats: 15,
       },
+      {
+        name: "Sort my scene standup comedy",
+        venue: "Chitranjan",
+        dateTime: new Date("2025-08-15T19:00:00"),
+        totalSeats: 30,
+      }
     ];
 
     const insertedEvents = await Event.insertMany(events);
